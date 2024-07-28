@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordsmith</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body-el" onload="countdown(), letterGen()">
+    <section>  
+        <div id="warning-el" class="warning-msg">
+            <span id="warning-txt">You have 15 seconds left!</span>
+        </div>
+        <div class="timer-container">
+            <div class="timer-bubble">
+                <span id="timer-el">00:30</span>
+            </div>
+        </div>
+        <div class="letter-container">
+            <div class="letter-bubble">
+                <span id="random-el"></span>
+            </div>
+        </div>
+        <div class="inputs-container" id="input-con">
+            <div class="name-container">
+                <div class="holding-container">
+                    <label for="name">Name</label>
+                    <div class="gradient">
+                        <input id="input-el1" type="text" name="name" placeholder="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="food-container">
+                <div class="holding-container">
+                    <label for="food">Food</label>
+                    <div class="gradient">
+                        <input id="input-el2" type="text" name="food" placeholder="">
+                        <span id="error-msg" class="error-msg"></span>
+                    </div>
+                </div> 
+            </div>
+            <div class="animal-container">
+                <div class="holding-container">
+                    <label for="animal">Animal</label>
+                    <div class="gradient">
+                        <input id="input-el3" type="text" name="animal" placeholder="">
+                    </div>  
+                </div>
+            </div>
+            <div class="place-container">
+                <div class="holding-container">
+                    <label for="place">Place</label>
+                    <div class="gradient">
+                        <input id="input-el4" type="text" name="place" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="thing-container">
+                <div class="holding-container">
+                    <label for="thing">Thing</label>
+                    <div class="gradient">
+                        <input id="input-el5" type="text" name="thing" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <button onclick="wordChecker2(); pushUserData2()" id="submit-el" class="submit-button">Submit</button>
+        </div>
+    </section>
+   <script src="style.js"></script> 
+</body>
+</html>
